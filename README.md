@@ -8,17 +8,27 @@ This a list of notes, tools, and themes used for my iTerm setup on macbook pro.
 ## Install/Setup Notes
 *Credit to Chamika Kasun for the awesome instructions / writeup*
 
-**1. Install Homebrew for Mac**
+**1. Install CLI tools for Xcode**
+```bash
+> xcode-select —-install
+```
+
+**2. Install Homebrew for Mac**
 ```bash
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-**2. Install ZSH (through Homebrew)**
+**3. Install iTerm2**
+```bash
+> brew cask install iterm2
+```
+
+**4. Install ZSH (through Homebrew)**
 ```bash
 > brew install zsh
 ```
 
-**3. Install "Oh My Zsh" framework**
+**5. Install "Oh My Zsh" framework**
  - Using curl:
     ```bash
     > sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -29,7 +39,7 @@ This a list of notes, tools, and themes used for my iTerm setup on macbook pro.
     > sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
     ```
 
-**4. Install Powerlevel10k theme**
+**6. Install Powerlevel10k theme**
    1. Font: `https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k`
         
    2. P10k for Oh-My-Zsh plugin manager:
@@ -47,7 +57,7 @@ This a list of notes, tools, and themes used for my iTerm setup on macbook pro.
         > p10k configure
         ```
 
-**5. Install Autosuggestions**
+**7. Install Autosuggestions**
    1. Clone repo into `$ZSH_CUSTOM/plugins`
         ```bash
         > git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -59,7 +69,7 @@ This a list of notes, tools, and themes used for my iTerm setup on macbook pro.
        4. Should look like this: `plugins=(zsh-autosuggestions OTHER_PLUGINS_HERE)`
     3. Restart terminal session
    
-**6. Install Syntax Highlighting**
+**8. Install Syntax Highlighting**
    1. Clone the git repo
         ```bash
         > git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
